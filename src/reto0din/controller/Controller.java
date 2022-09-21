@@ -5,10 +5,24 @@
  */
 package reto0din.controller;
 
+import reto0din.model.Model;
+import reto0din.ui.View;
+
 /**
  *
  * @author iorit
  */
 public class Controller {
-    
+
+    private View myView;
+    private Model myModel;
+
+    public Controller(View myView, Model myModel) {
+        this.myView = myView;
+        this.myModel = myModel;
+    }
+
+    public void run() {
+        myView.showGreeting(myModel.getGreeting());
+    }
 }
