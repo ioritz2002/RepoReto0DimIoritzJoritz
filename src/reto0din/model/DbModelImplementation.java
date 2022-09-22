@@ -54,7 +54,7 @@ public class DbModelImplementation implements Model{
     @Override
     public String getGreeting() {
         ResultSet rs = null;
-        String greeting;
+        String greeting = null;
         
         this.openConnection();
         try {
@@ -78,7 +78,7 @@ public class DbModelImplementation implements Model{
         }
         
         
-        return null;
+        return greeting;
     }
     
 }
