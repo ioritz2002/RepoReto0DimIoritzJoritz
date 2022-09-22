@@ -9,7 +9,7 @@ package reto0din.ui;
  *
  * @author 2dam
  */
-public class textViewImplementation implements View{
+public class TextViewImplementation implements View{
 
     @Override
     public void showGreeting(String greeting) {
