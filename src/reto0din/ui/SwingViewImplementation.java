@@ -9,7 +9,7 @@ package reto0din.ui;
  *
  * @author iorit
  */
-public class SwingViewImplementation extends javax.swing.JFrame {
+public class SwingViewImplementation extends javax.swing.JFrame implements View{
 
     /**
      * Creates new form SwingViewImplementation
@@ -52,6 +52,7 @@ public class SwingViewImplementation extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    @Override
     public void showGreeting(String greeting){
         txtMessage.setText(greeting);
     }
