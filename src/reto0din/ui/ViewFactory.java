@@ -15,7 +15,7 @@ public class ViewFactory {
             return new SwingViewImplementation();
         }
         else if (param.equalsIgnoreCase("Text")) {
-            return new textViewImplementation();
+            return new TextViewImplementation();
         } 
         else{
             throw new NullPointerException();
