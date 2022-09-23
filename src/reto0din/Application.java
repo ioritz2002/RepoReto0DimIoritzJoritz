@@ -9,7 +9,7 @@ package reto0din;
  *
  * @author iorit
  */
-public class Reto0Din {
+public class Application {
 
     /**
      * @param args the command line arguments
