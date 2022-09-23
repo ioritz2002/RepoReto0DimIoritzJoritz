@@ -11,13 +11,12 @@ package reto0din.model;
  */
 public class ModelFactory {
 
-    public Model getModel(String param) throws NullPointerException{
+    public Model getModel(String param){
         if (param.equalsIgnoreCase("file")) {
             return new FileModelImplementation();
         }else if(param.equalsIgnoreCase("database")){
             return new DbModelImplementation();
-        }else{
-            throw new NullPointerException();
         }
+        return null;
     }
 }

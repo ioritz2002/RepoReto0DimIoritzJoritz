@@ -5,6 +5,13 @@
  */
 package reto0din;
 
+import java.util.ResourceBundle;
+import reto0din.controller.Controller;
+import reto0din.model.Model;
+import reto0din.model.ModelFactory;
+import reto0din.ui.View;
+import reto0din.ui.ViewFactory;
+
 /**
  *
  * @author iorit
@@ -15,7 +22,18 @@ public class Application {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        View myView = null;
+        Model myModel = null;
+        ViewFactory myViewFactory = new ViewFactory();
+        ModelFactory myModelFactory = new ModelFactory();
+        String viewOption = ResourceBundle.getBundle("reto0din.configFile").getString("view");
+        String modelOption = ResourceBundle.getBundle("reto0din.configFile").getString("model");
+        
+        myView = myViewFactory.getView(viewOption);
+        myModel = myModelFactory.getModel(modelOption);
+        
+        Controller controller = new Controller(myView, myModel);
+        controller.run();
     }
     
 }
