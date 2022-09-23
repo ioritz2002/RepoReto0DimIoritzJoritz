@@ -9,7 +9,7 @@ package reto0din.ui;
  *
  * @author iorit
  */
-public class SwingViewImplementation extends javax.swing.JFrame {
+public class SwingViewImplementation extends javax.swing.JFrame implements View{
 
     /**
      * Creates new form SwingViewImplementation
