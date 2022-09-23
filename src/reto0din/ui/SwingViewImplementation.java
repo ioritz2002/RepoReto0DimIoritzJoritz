@@ -52,6 +52,7 @@ public class SwingViewImplementation extends javax.swing.JFrame implements View{
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    @Override
     public void showGreeting(String greeting){
         txtMessage.setText(greeting);
     }

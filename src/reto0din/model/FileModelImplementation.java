@@ -13,7 +13,7 @@ import java.util.Scanner;
  *
  * @author 2dam
  */
-public class fileModelImplementation implements Model{    
+public class FileModelImplementation implements Model{    
     
     @Override
     public String getGreeting() {
