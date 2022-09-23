@@ -28,10 +28,11 @@ public class DbModelImplementation implements Model{
     private final String SEARCHgreeting = "SELECT * FROM greeting";
     
     public DbModelImplementation(){
-        this.configFile = ResourceBundle.getBundle("model.dbconfig");
+        this.configFile = ResourceBundle.getBundle("reto0din.model.dbconfig");
         this.url = configFile.getString("Conn");
-        this.user = configFile.getString("BDUser");
+        this.user = configFile.getString("DBUser");
         this.password = configFile.getString("DBPass");
+        
     }
     
     public void openConnection(){

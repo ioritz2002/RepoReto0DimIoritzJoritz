@@ -26,7 +26,7 @@ public class Application {
         Model myModel = null;
         ViewFactory myViewFactory = new ViewFactory();
         ModelFactory myModelFactory = new ModelFactory();
-        String viewOption = ResourceBundle.getBundle("reto0din.configFile").getString("view"); 
+        String viewOption = ResourceBundle.getBundle("reto0din.configFile").getString("view");
         String modelOption = ResourceBundle.getBundle("reto0din.configFile").getString("model");
         
         myView = myViewFactory.getView(viewOption);

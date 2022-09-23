@@ -17,7 +17,7 @@ public class FileModelImplementation implements Model{
     
     @Override
     public String getGreeting() {
-        String greeting = ResourceBundle.getBundle("model.greeting").getString("greeting");
+        String greeting = ResourceBundle.getBundle("reto0din.model.greeting").getString("greeting");
         return greeting;
     }
     

@@ -16,6 +16,7 @@ public class SwingViewImplementation extends javax.swing.JFrame implements View{
      */
     public SwingViewImplementation() {
         initComponents();
+        this.setVisible(true);
     }
 
     /**
