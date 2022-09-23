@@ -10,16 +10,14 @@ package reto0din.ui;
  * @author iorit
  */
 public class ViewFactory {
-    public View getView(String param) throws NullPointerException{
+    public View getView(String param){
         if (param.equalsIgnoreCase("Graphic")) {
             return new SwingViewImplementation();
         }
         else if (param.equalsIgnoreCase("Text")) {
             return new TextViewImplementation();
         } 
-        else{
-            throw new NullPointerException();
-        }
-         
+        
+         return null;
     }
 }
