@@ -25,8 +25,14 @@ public class DbModelImplementation implements Model{
     private String url;
     private String user;
     private String password;
+    /**
+     * Consulta de la base de datos para sacar el mensaje
+     */
     private final String SEARCHgreeting = "SELECT * FROM greeting";
     
+    /**
+     * Configuracion para conectarse a la base de datos
+     */
     public DbModelImplementation(){
         this.configFile = ResourceBundle.getBundle("reto0din.model.dbconfig");
         this.url = configFile.getString("Conn");
@@ -35,6 +41,9 @@ public class DbModelImplementation implements Model{
         
     }
     
+    /**
+     * Abrir conexion a la base de datos
+     */
     public void openConnection(){
         try {
             conex = DriverManager.getConnection(url, user, password);
@@ -43,6 +52,10 @@ public class DbModelImplementation implements Model{
         }
     }
     
+    /**
+     * Cerrar conexion de la base de daos
+     * @throws SQLException 
+     */
     public void closeConnection() throws SQLException{
         if (conex != null) {
             conex.close();
@@ -52,6 +65,10 @@ public class DbModelImplementation implements Model{
         }
     }
     
+    /**
+     * Buscar el mensaje "greeting" en la base de datos y recogerlo
+     * @return 
+     */
     @Override
     public String getGreeting() {
         ResultSet rs = null;

@@ -11,6 +11,10 @@ package reto0din.ui;
  */
 public class TextViewImplementation implements View{
 
+    /**
+     * Metodo que muestra el mensaje
+     * @param greeting 
+     */
     @Override
     public void showGreeting(String greeting) {
         System.out.println(greeting);

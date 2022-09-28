@@ -11,6 +11,11 @@ package reto0din.model;
  */
 public class ModelFactory {
 
+    /**
+     * Metodo que obtiene el modelo para conseguir el mensaje
+     * @param param utilizado para escoger el modo en el que se obtendra el mensaje
+     * @return 
+     */
     public Model getModel(String param){
         if (param.equalsIgnoreCase("file")) {
             return new FileModelImplementation();

@@ -10,6 +10,12 @@ package reto0din.ui;
  * @author iorit
  */
 public class ViewFactory {
+    
+    /**
+     * Metodo en el que muestra la forma en la que aparecera el mensaje
+     * @param param utilizado para escoger el modo en el que se mostrara e mensaje
+     * @return 
+     */
     public View getView(String param){
         if (param.equalsIgnoreCase("Graphic")) {
             return new SwingViewImplementation();

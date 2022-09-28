@@ -10,11 +10,15 @@ import java.util.ResourceBundle;
 import java.util.Scanner;
 
 /**
- *
+ * 
  * @author 2dam
  */
 public class FileModelImplementation implements Model{    
     
+    /**
+     * Metodo que recoge el mensaje
+     * @return 
+     */
     @Override
     public String getGreeting() {
         String greeting = ResourceBundle.getBundle("reto0din.model.greeting").getString("greeting");

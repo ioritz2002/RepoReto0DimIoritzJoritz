@@ -13,7 +13,7 @@ import reto0din.ui.View;
 import reto0din.ui.ViewFactory;
 
 /**
- *
+ * Clase Principal
  * @author iorit
  */
 public class Application {
@@ -29,10 +29,12 @@ public class Application {
         String viewOption = ResourceBundle.getBundle("reto0din.configFile").getString("view");
         String modelOption = ResourceBundle.getBundle("reto0din.configFile").getString("model");
         
+        //Obtenemos la opcion de la vista y de la clase
         myView = myViewFactory.getView(viewOption);
         myModel = myModelFactory.getModel(modelOption);
         
         Controller controller = new Controller(myView, myModel);
+        //Llamamos al metodo run y lo ejecutamos
         controller.run();
     }
     

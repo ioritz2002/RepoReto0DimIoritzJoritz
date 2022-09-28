@@ -22,6 +22,9 @@ public class Controller {
         this.myModel = myModel;
     }
 
+    /**
+     * Metodo que recoge la vista y el modelo para mostrar el mensaje
+     */
     public void run() {
         myView.showGreeting(myModel.getGreeting());
     }
