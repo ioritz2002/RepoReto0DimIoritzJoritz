@@ -14,7 +14,7 @@ public class ModelFactory {
     /**
      * Metodo que obtiene el modelo para conseguir el mensaje
      * @param param utilizado para escoger el modo en el que se obtendra el mensaje
-     * @return 
+     * @return Retorna una implementacion del modelo, en el caso de que la opcion elegida no sea correcta se devolvera null
      */
     public Model getModel(String param){
         if (param.equalsIgnoreCase("file")) {

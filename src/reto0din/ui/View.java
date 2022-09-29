@@ -10,5 +10,9 @@ package reto0din.ui;
  * @author iorit
  */
 public interface View {
+    /**
+     * Este metodo muestra el saludo en la vista
+     * @param greeting Es el saludo a mostrar
+     */
     public void showGreeting(String greeting);
 }

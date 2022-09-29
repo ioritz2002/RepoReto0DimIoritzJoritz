@@ -82,7 +82,7 @@ public class DbModelImplementationTest {
         String greeting = myModel.getGreeting();
         
         assertNotNull("The greeting can't be null", greeting);
-        assertEquals("The obtained message is not correct", greeting, "Hola Mundo");
+        assertEquals("The obtained message is not correct", greeting, "Hola mundo BD");
     }
     
 }

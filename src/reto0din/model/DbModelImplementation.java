@@ -65,10 +65,7 @@ public class DbModelImplementation implements Model{
         }
     }
     
-    /**
-     * Buscar el mensaje "greeting" en la base de datos y recogerlo
-     * @return 
-     */
+    
     @Override
     public String getGreeting() {
         ResultSet rs = null;

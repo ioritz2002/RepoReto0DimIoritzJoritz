@@ -14,7 +14,7 @@ public class ViewFactory {
     /**
      * Metodo en el que muestra la forma en la que aparecera el mensaje
      * @param param utilizado para escoger el modo en el que se mostrara e mensaje
-     * @return 
+     * @return Retorna la implementacion de la vista, si la opcion seleccionada no es correcta retornara null
      */
     public View getView(String param){
         if (param.equalsIgnoreCase("Graphic")) {
